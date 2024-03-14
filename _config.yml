@@ -37,7 +37,7 @@ mastodon_link                             :
 features                                  :
     
   - title                                 : High Quality Camera
-    description                           : Automatically configures your device to capture the best quality content.
+    description                           : Have your device automatically configured to capture the best quality content.
     fontawesome_icon_name                 : mobile
 
   - title                                 : Fully Customizable Timer
@@ -50,7 +50,7 @@ features                                  :
     
   - title                                 : Video Support
     description                           : Capture live photos or even video while taking photos at the same time.
-    fontawesome_icon_name                 : video-camera
+    fontawesome_icon_name                 : video
 
   - title                                 : Search & Sort
     description                           : Use the custom gallery system to organize and to find the best photos to keep.
