@@ -37,23 +37,23 @@ mastodon_link                             :
 features                                  :
     
   - title                                 : High Quality Camera
-    description                           : Configures your device to capture to best possible content.
+    description                           : Automatically configures your device to capture the best quality content.
     fontawesome_icon_name                 : mobile
 
   - title                                 : Fully Customizable Timer
-    description                           : Set initial wait time, frequency, number of photos to take an more.
-    fontawesome_icon_name                 : clock-o
+    description                           : Set initial wait time, frequency, number of photos and much more.
+    fontawesome_icon_name                 : clock
     
   - title                                 : Your Personal Photographer
     description                           : Use AI features to guide you during the photoshoot by using flash, sounds or speech.
     fontawesome_icon_name                 : camera
     
   - title                                 : Video Support
-    description                           : It even captures video while taking photos.
-    fontawesome_icon_name                 : play-circle
+    description                           : Capture live photos or even video while taking photos at the same time.
+    fontawesome_icon_name                 : video-camera
 
   - title                                 : Search & Sort
-    description                           : Use custom gallery system to find the best photos to keep.
+    description                           : Use the custom gallery system to organize and to find the best photos to keep.
     fontawesome_icon_name                 : thumbs-up
   
   - title                                 : Filters
