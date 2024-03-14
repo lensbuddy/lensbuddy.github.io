@@ -1,3 +1,8 @@
+---
+layout: page
+title: Privacy Policy
+include_in_header: false
+---
 **Privacy Policy**
 
 Lens Buddy Selfie Timer Photo Video Filter Camera LLC built the Lens Buddy app as a Freemium app. This SERVICE is provided by Lens Buddy Selfie Timer Photo Video Filter Camera LLC at no cost and is intended for use as is.
