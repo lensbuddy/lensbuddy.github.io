@@ -24,6 +24,9 @@ Link to the privacy policy of third-party service providers used by the app
 *   [Google Play Services](https://www.google.com/policies/privacy/)
 *   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
 *   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+*   [RevenueCat](https://www.revenuecat.com/privacy/)
+*   [SuperWall](https://superwall.com/privacy)
+*   [MixPanel](https://mixpanel.com/legal/privacy-policy/)
 
 **Log Data**
 
