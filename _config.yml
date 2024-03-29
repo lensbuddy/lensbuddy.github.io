@@ -1,5 +1,5 @@
 #page title
-page_title                                : Lens Buddy self timer camera app for iOS                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Lens Buddy Self Timer Camera                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id                                : 1289471945                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -37,7 +37,7 @@ mastodon_link                             :
 features                                  :
     
   - title                                 : High Quality Camera
-    description                           : Have your device automatically configured to capture the best quality content.
+    description                           : Have your iOS device automatically configured to capture the best quality content.
     fontawesome_icon_name                 : mobile
 
   - title                                 : Fully Customizable Timer
