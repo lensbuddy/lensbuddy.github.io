@@ -121,6 +121,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - faq.md
 
 collections:
   pages:
