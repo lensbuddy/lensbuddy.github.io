@@ -3,7 +3,7 @@ layout: page
 title: Frequently Asked Questions
 include_in_header: false
 ---
-# **Frequently Asked Questions**
+# **Missing photos**
 
 ##### How photo storage works in Lens Buddy:
 
@@ -22,3 +22,10 @@ If you delete a photo that was stored in the camera roll (by using either the Ph
 
 If you deleted the app but saved photos to the camera roll (either by capturing photos directly to the camera roll or have exported from the app later) those should be available.
 If you deleted the app but photos were only saved in the app then it's unfortunately not possible to recover them.
+
+##### If you lost your device or switched to a new device:
+
+If a photo was saved in the camera roll (either by capturing there directly or by having exported from Lens Buddy) and you have iCloud backup enabled it should be available in the Photos app.
+If you only had the photos in Lens Buddy then unfortunately they can’t be recovered since they were stored locally on the device.
+
+If you have an iCloud backup of your phone then when you restore on a new phone from the iCloud backup (`restore from iCloud backup`) there *might* be some photos still available eventually in the app through the `Lost and Found` menu. However, this is not supported and is not guaranteed to have any success because it depends on many variables. (eg. whether iCloud backup was turned on or not on the old device, if the old device had a chance to do a backup, network circumstances etc.)

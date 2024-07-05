@@ -121,8 +121,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - _pages/faq.md
-  - pages/faq.md
+  - _pages/missing_photos.md
 
 collections:
   pages:
