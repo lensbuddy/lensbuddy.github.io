@@ -3,7 +3,7 @@ layout: page
 title: Frequently Asked Questions
 include_in_header: false
 ---
-# **Canceling a subscription**
+# **Requesting a refund for a subscription**
 
 Thank you for considering supporting Lens Buddy! We constantly strive to improve it and make it the best app for photography listening to user feedback. However we understand that you might have other priorities. Getting a refund is a 2 step process, where you need to stop the subscription first and once it's done you'll need to request a refund from Apple.
 
