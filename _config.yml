@@ -6,7 +6,7 @@ ios_app_id                                : 1289471945                          
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
+playstore_link                            : https://play.google.com/store/apps/details?id=com.lensbuddy.photographer                                          # Enter Google Play Store URL.
 presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 privacy_policy_link                       : privacypolicy
@@ -39,7 +39,7 @@ mastodon_link                             :
 features                                  :
     
   - title                                 : High Quality Camera
-    description                           : Have your iOS device automatically configured to capture the best quality content.
+    description                           : Have your iOS or Android device automatically configured to capture the best quality content.
     fontawesome_icon_name                 : mobile
 
   - title                                 : Fully Customizable Timer
