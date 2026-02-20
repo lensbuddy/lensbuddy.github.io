@@ -3,10 +3,45 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="kXWygSV-AELRVRplZTPiLwV_Ujjdj2vCvQU9Y1VkDJc" />
+	<meta name="robots" content="index, follow">
 	<base target="_blank">
 
 	<title class="pageTitle">{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
+	<link rel="canonical" href="https://lensbuddy.app{{ page.url }}">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{ site.page_title }}">
+	<meta property="og:description" content="{{ site.app_description }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://lensbuddy.app{{ page.url }}">
+	<meta property="og:image" content="https://lensbuddy.app/assets/headerimage.jpg">
+	<meta property="og:site_name" content="Lens Buddy">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+	<meta name="twitter:title" content="{{ site.page_title }}">
+	<meta name="twitter:description" content="{{ site.app_description }}">
+	<meta name="twitter:image" content="https://lensbuddy.app/assets/headerimage.jpg">
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": "Lens Buddy",
+		"operatingSystem": "iOS, Android",
+		"applicationCategory": "PhotographyApplication",
+		"description": "{{ site.app_description }}",
+		"url": "https://lensbuddy.app",
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		}
+	}
+	</script>
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 
@@ -15,6 +50,9 @@
 		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
 	{% endif %}
 
+	<link rel="preconnect" href="https://ajax.googleapis.com" crossorigin>
+	<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+	<link rel="preconnect" href="https://itunes.apple.com" crossorigin>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 </head>

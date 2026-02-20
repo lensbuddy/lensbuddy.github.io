@@ -5,7 +5,7 @@
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
+			<a href="https://facebook.com/{{ site.facebook_username }}" aria-label="Follow us on Facebook" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
@@ -14,7 +14,7 @@
 		{% endif %}
 
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
+			<a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Follow us on Twitter" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
@@ -23,7 +23,7 @@
 		{% endif %}
 
 		{% if site.instagram_username %}
-			<a href="https://instagram.com/{{ site.instagram_username }}">
+			<a href="https://instagram.com/{{ site.instagram_username }}" aria-label="Follow us on Instagram" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
@@ -32,7 +32,7 @@
 		{% endif %}
 
 		{% if site.mastodon_link %}
-			<a rel="me" href="{{ site.mastodon_link }}">
+			<a rel="me noopener" href="{{ site.mastodon_link }}" aria-label="Follow us on Mastodon">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-mastodon fa-stack-1x"></i>
@@ -41,7 +41,7 @@
 		{% endif %}
 
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
+			<a href="https://github.com/{{ site.github_username }}" aria-label="View us on GitHub" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
@@ -50,7 +50,7 @@
 		{% endif %}
 
 		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
+			<a href="mailto:{{ site.email_address }}" aria-label="Send us an email">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
