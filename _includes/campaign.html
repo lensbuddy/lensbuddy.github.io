@@ -1,0 +1,44 @@
+<!-- Forwards a ?ct=<campaign> landing param to the page URL, the Smart App Banner and all store links. -->
+<script>
+(function () {
+	var maxAge = 24 * 60 * 60 * 1000;
+	var ct = new URLSearchParams(location.search).get('ct');
+	try {
+		var saved = JSON.parse(localStorage.getItem('campaign'));
+		var active = saved && Date.now() - saved.savedAt < maxAge ? saved.ct : null;
+		if (ct && ct !== active) {
+			localStorage.setItem('campaign', JSON.stringify({ ct: ct, savedAt: Date.now() }));
+		}
+		ct = ct || active;
+	} catch (e) {}
+
+	var appStoreParams = { pt: '{{ site.appstore_provider_token }}', ct: ct, mt: '8' };
+
+	{% if site.enable_smart_app_banner %}
+	var banner = document.createElement('meta');
+	banner.name = 'apple-itunes-app';
+	banner.content = 'app-id={{ site.ios_app_id }}' +
+		(ct ? ', affiliate-data=' + new URLSearchParams(appStoreParams) : '');
+	document.head.appendChild(banner);
+	{% endif %}
+
+	if (!ct) return;
+
+	// Keeps the campaign in the address bar so "Open in browser" and sharing carry it.
+	var pageUrl = new URL(location.href);
+	pageUrl.searchParams.set('ct', ct);
+	history.replaceState(history.state, '', pageUrl);
+
+	document.addEventListener('DOMContentLoaded', function () {
+		document.querySelectorAll('a[href*="apps.apple.com"], a[href*="play.google.com"]').forEach(function (a) {
+			var url = new URL(a.href);
+			if (url.hostname === 'apps.apple.com') {
+				for (var key in appStoreParams) url.searchParams.set(key, appStoreParams[key]);
+			} else {
+				url.searchParams.set('referrer', 'utm_source=lensbuddy.app&utm_campaign=' + encodeURIComponent(ct));
+			}
+			a.href = url;
+		});
+	});
+})();
+</script>

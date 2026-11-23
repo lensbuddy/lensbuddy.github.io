@@ -11,12 +11,15 @@ Lens Buddy can store photos either locally inside the app (default) or in the ca
 
 ##### If you deleted a photo that is stored locally inside the app:
 
-If you delete a photo from the Lens Buddy gallery the app stores it for 7 days and those can be recovered from `recently deleted`. Recently deleted is at the bottom of the gallery list.
-After the 7 days pass the file is physically removed from the device and from that point it's not possible to recover it.
+If you delete a photo in a Lens Buddy gallery, the app keeps it in `Discarded` for 7 days, and you can recover it from there. `Discarded` is at the bottom of the gallery list.
+After 7 days, the file is removed from the device and can’t be recovered. The same applies if you delete a photo that’s already in `Discarded`.
+`Reset Storage` also permanently deletes all photos, including the ones that aren’t in `Discarded`, and they can’t be recovered later.
 
 ##### If you deleted a photo that is stored in the camera roll:
 
-If you delete a photo that is stored in the camera roll (by using either the Photos app or Lens Buddy) it will be moved to the Recently Deleted in the Photos app (and NOT the `recently deleted` in Lens Buddy).  At this point it will disappear from Lens Buddy but will still be available in the Recently Deleted in the Photos app for some time. (Usually around 30 days.)
+Lens Buddy’s `Discarded` gallery is separate from the `Recently Deleted` album in the Photos app.
+If you delete a photo in the Photos app, it’s moved to the `Recently Deleted` album in the Photos app and won’t be available in Lens Buddy anymore.
+If you delete a photo in Lens Buddy, it’s first moved to `Discarded` in Lens Buddy. After 7 days, Lens Buddy tries to delete it from the Photos app and asks for your permission to do so. At this point, the deleted photos disappear from Lens Buddy but stay in the `Recently Deleted` album in the Photos app for some time (usually around 30 days).
 
 ##### If you deleted the app:
 
